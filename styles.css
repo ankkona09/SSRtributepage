@@ -3,6 +3,13 @@ body {
     background-color: #9DB2BF;
 }
 
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .homeimage {
     background-image: url("https://imgeng.jagran.com/images/2023/jan/sushant%20singh%20rajput%20(1)1674216562771.jpg");
     background-size: cover;
@@ -134,8 +141,8 @@ p {
 }
 
 .size1 {
-    width: 43.75rem;
-    height: 31.25rem;
+    width: 35rem;
+    height: 20rem;
 }
 
 .qcontainer {
@@ -222,4 +229,174 @@ p {
 
 .h1 {
     padding-top: 3.125rem;
+}
+
+@media (max-width:991px) {
+    .heading {
+        font-size: 1.5rem;
+        /* 45px */
+        color: aliceblue;
+        position: absolute;
+        top: 15px;
+        text-align: left;
+        /* 300px */
+
+        /* 40px */
+    }
+
+    .heading2 {
+        font-size: 1.3rem;
+        /* 25px */
+        color: aliceblue;
+        width: 50%;
+        position: absolute;
+        top: 13.25rem;
+        /* 500px */
+        left: 2.5rem;
+        /* 40px */
+    }
+
+    .acontainer {
+        width: 200px;
+        height: 380px;
+        position: relative;
+        left: 4.2rem;
+        border-radius: 15px;
+    }
+
+    .container p {
+        width: 600px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .homeimage {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 2rem;
+        /* 45px */
+        color: aliceblue;
+        position: absolute;
+        right: 20px;
+        text-align: left;
+        /* 300px */
+
+        /* 40px */
+    }
+
+    .heading2 {
+        font-size: 1.5625rem;
+        /* 25px */
+        color: aliceblue;
+        width: 80%;
+        position: absolute;
+        top: 35rem;
+        /* 500px */
+        left: 2.5rem;
+        /* 40px */
+    }
+
+    .heading3 {
+        position: relative;
+        right: 0rem;
+    }
+
+    .para {
+        font-size: 18px;
+        width: 80%;
+        text-align: left;
+    }
+
+    .awardscontainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .acontainer {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 4.2rem;
+    }
+
+    .container p {
+        width: 350px;
+    }
+
+    .text {
+        width: 350px;
+        font-size: 18px;
+    }
+
+    .videocontainer {
+        width: 10px;
+    }
+
+    .quotescontainer {
+        width: 300px;
+    }
+
+    .qu1 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .size1 {
+        width: 300px;
+        height: 100%;
+    }
+
+    .cmnt {
+        font-size: 18px;
+    }
+
+    .border {
+        width: 300px;
+    }
+
+    .message {
+        width: 300px;
+    }
+
+    .submitbtn {
+        width: 150px;
+    }
+
+    .filmcontainer {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(2, 155px);
+        grid-template-rows: repeat(3, 140px);
+        height: 100vh;
+        width: 100%;
+        max-width: 50rem;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .filmimage {
+        width: 150px;
+    }
+
+    .aimages {
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1.25rem;
+        border-style: double;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    .award {
+        font-size: 14px;
+        position: relative;
+        bottom: 3rem;
+    }
+
 }
